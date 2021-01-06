@@ -71,12 +71,15 @@ section{
   padding: 15px;
   border-radius: 10px;
   box-shadow: 5px 8px 15px 2px rgb(177, 177, 177);
+  transition: .3s ease;
 
 }
 .one-third:nth-child(1){
   margin-left: 1.7%;
 }
-
+.one-third:hover{
+  transform: scale(1.1);
+}
 span{
   display: inline-block;
    color: tomato;
@@ -102,6 +105,17 @@ h1{
   font-size: 60px;
   font-family: 'Balsamiq Sans', cursive;
   margin-top: 30px;
+  color: #555;
+}
+#top-section span{
+  background: rgb(58, 56, 56);
+  padding-right: 50px;
+  transition: .3s ease-in-out;
+  border-radius: 5px;
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 110px;
+  margin-top: 20px;
+  color:#f56161;
 }
 .little-description{
   margin: 30px 0;
@@ -121,6 +135,7 @@ h1{
   color: #fff;
   /* border: 2px solid #fff; */
 }
+
 /*==========================*/
         /* About Section */
 /*==========================*/
@@ -189,7 +204,7 @@ h1{
   color: #fff;
   text-transform: uppercase;
 }
-#inquiary a{
+.btn-inquiary{
   text-decoration: none;
   background: #ffae00;
   color: #000;
