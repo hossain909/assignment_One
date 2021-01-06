@@ -40,6 +40,22 @@ nav{
 section{
   padding: 80px 0;
 }
+h2::after{
+  content: "";
+  display: block;
+  height: 2px;
+  width: 100px;
+  background: #949494;
+  margin-top: 10px;
+}
+#project h2::after{
+  margin: auto;
+  margin-top: 10px;
+}
+#service h2::after{
+  margin: auto;
+  margin-top: 10px;
+}
 .row{
   max-width: 1200px;
   margin: 0 auto;
@@ -55,7 +71,6 @@ section{
 .col{
   display: block;
   float: left;
-  
 }
 .half-width:nth-child(1){
   margin-left: 0;
@@ -139,6 +154,9 @@ h1{
 /*==========================*/
         /* About Section */
 /*==========================*/
+#about-section .col:nth-child(2){
+  margin-top: 50px;
+}
 .btn-cv i{
   padding-right: 10px;
   color: #ee0d45;
@@ -164,6 +182,7 @@ h1{
 /*==========================*/
 #service{
   text-align: center;
+  background: #D7DBDD ;
 }
 #service h2{
   margin-bottom: 50px;
@@ -173,24 +192,33 @@ h1{
 } */
 #service h4{
   font-size: 22px;
-  color: #444;
+  color: #F5B041;
   margin: 20px 0;
+}
+#service p{
+  color: #f0ebebe8;
 }
 #service .col{
   padding: 35px;
 }
 
 #service img {
-  height: 100px;
+  height: 90px;
   width: 90px;
   margin-bottom: 25px;
 }
+.service-bg{
+  background: rgb(50,50,50);
+  
+}
+
 /*==========================*/
         /* Inquiary Section */
 /*==========================*/
 #inquiary{
   position: relative;
   padding: 60px 0;
+  margin-top: 50px;
 }
 #inquiary img{
   width: 70%;
