@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+html{
+  scroll-behavior: smooth;
+}
 body{
   font-family: 'Rubik', sans-serif;
   font-weight: 300;
@@ -11,14 +14,36 @@ body{
 /*==========================*/
         /* Basic Setup */
 /*==========================*/
-
+nav{
+  width: 95%;
+  margin-right: 5%;
+}
+.main-nav{
+  float: right;
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+.main-nav li {
+  display: inline-block;
+  margin-left: 15px;
+  list-style-type: none;
+}
+.main-nav li:first-child{
+  margin-left: 0;
+}
+.main-nav li a:any-link{
+  color: black;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+}
 section{
   padding: 80px 0;
 }
 .row{
   max-width: 1200px;
   margin: 0 auto;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 .row::after{
   content: "";
@@ -142,7 +167,7 @@ h1{
 
 #service img {
   height: 100px;
-  width: 100px;
+  width: 90px;
   margin-bottom: 25px;
 }
 /*==========================*/
@@ -173,37 +198,41 @@ h1{
   position: absolute;
   top: 45%;
   left: 65%;
+  transition: .3s ease-in-out;
 }
 #inquiary a:hover{
-  border: 2px solid #fff;
-  background: #0586ff;
+  background: #ff7113;
   color: #fff;
 }
 
 footer{
   text-align: center;
-  padding: 30px 0;
-  border: 1px solid red;
+  padding: 40px 0;
+  /* border: 1px solid red; */
 }
 h5{
-  font-size: 22px;
+  font-size: 16px;
   color: #444;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
-ul li{
-  display: inline-block;
+footer .row{
   margin-top: 20px;
-  padding: 10px;
+}
+footer .hero-site{
+  font-size: 30px;
+  text-decoration: none;
+  font-weight: bold;
 }
 .one{
-  color:tomato;
-  font-size: 35px;
+  width: 3%;
+  margin-left: 15px;
 }
 .two{
-  color: blue;
-  font-size: 35px;
+  width: 3%;
+  margin-left: 15px;
 }
 .three{
-  color: #f30707;
-  font-size: 35px;
+  width: 3%;
+  margin-left: 15px;
 }
