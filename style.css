@@ -48,14 +48,6 @@ h2::after{
   background: #949494;
   margin-top: 10px;
 }
-#project h2::after{
-  margin: auto;
-  margin-top: 10px;
-}
-#service h2::after{
-  margin: auto;
-  margin-top: 10px;
-}
 .row{
   max-width: 1200px;
   margin: 0 auto;
@@ -109,6 +101,8 @@ p{
 h2{
   font-size: 36px;
   text-transform: uppercase;
+  color: #444;
+  letter-spacing: 2px;
 }
 img{
   width: 100%;
@@ -136,19 +130,21 @@ h1{
   margin: 30px 0;
 }
 .btn{
+  background: #fda839;
+  color: #333;
   text-decoration: none;
   padding: 10px 25px;
   border-radius: 5px;
   font-size: 18px;
-  transition: all .3s ease-in-out;
-  background: #ffae06;
-  color: #000;
+  transition: all .2s ease-in-out;
+  /* border: 2px solid #444; */
+  font-weight: bold;
 
 }
 .btn:hover{
-  background: #000;
+  background: #444;
   color: #fff;
-  /* border: 2px solid #fff; */
+ 
 }
 
 /*==========================*/
@@ -165,16 +161,22 @@ h1{
 /*==========================*/
         /* Project Section */
 /*==========================*/
-#project{
+#works{
   background: #ecf0f1;
-  height: 600px;
 }
-#project h2{
+#works .row{
+  padding: 25px 0;
+}
+#works h2{
   font-size: 36px;
   text-align: center;
   margin-bottom: 50px;
 }
-#project h3{
+#works h2::after{
+  margin: auto;
+  margin-top: 10px;
+}
+#works h3{
   margin: 15px 0;
 }
 /*==========================*/
@@ -184,12 +186,19 @@ h1{
   text-align: center;
   background: #D7DBDD ;
 }
+#service .row{
+  padding: 25px 0;
+}
+#service .col{
+  padding: 35px;
+}
 #service h2{
   margin-bottom: 50px;
 }
-/* #service i{
-  font-size: 40px;
-} */
+#service h2::after{
+  margin: auto;
+  margin-top: 10px;
+}
 #service h4{
   font-size: 22px;
   color: #F5B041;
@@ -198,10 +207,6 @@ h1{
 #service p{
   color: #f0ebebe8;
 }
-#service .col{
-  padding: 35px;
-}
-
 #service img {
   height: 90px;
   width: 90px;
@@ -209,7 +214,6 @@ h1{
 }
 .service-bg{
   background: rgb(50,50,50);
-  
 }
 
 /*==========================*/
@@ -235,7 +239,8 @@ h1{
 .btn-inquiary{
   text-decoration: none;
   background: #ffae00;
-  color: #000;
+  color: #444;
+  font-weight: bold;
   padding: 15px 25px;
   border-radius: 5px;
   position: absolute;
